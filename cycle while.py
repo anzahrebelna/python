@@ -1,4 +1,4 @@
-your_number = int(input('Введите целое положительное число:'))
+your_number = int(input('Enter a positive integer:'))
 max_number = 0
 
 while your_number > 0:
