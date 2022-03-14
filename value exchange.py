@@ -1,4 +1,4 @@
-numbers = list(input('Введите строку/число: '))
+numbers = list(input('Enter string/number: '))
 if len(numbers) % 2 == 0:
     numbers[::2], numbers[1::2] = numbers[1::2], numbers[::2]
 else:
