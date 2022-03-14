@@ -1,4 +1,4 @@
-str = (input()).split('Введите строку: ')
+str = (input()).split('Enter the string: ')
 
 for ind, el in enumerate(str, 1):
     if len(el) > 10:
