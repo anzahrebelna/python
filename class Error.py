@@ -6,16 +6,16 @@ class Error:
 
         while True:
             try:
-                val = input('Введите число и нажимайте Enter, для выхода впишите Stop: ')
+                val = input('Enter a number and press Enter, to exit, type Stop: ')
                 int_val = int(val)
                 self.my_list.append(int_val)
                 print(f'{self.my_list} \n ')
             except:
                 if val == 'Stop':
-                    return f'Вы вышли'
+                    return f'You got out'
                     break
                 else:
-                    print(f"Недопустимое значение")
+                    print(f"Invalid value")
 
 
 
