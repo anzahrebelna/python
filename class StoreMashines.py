@@ -7,25 +7,25 @@ class StoreMashines:
         self.numb = number_of_lists
         self.my_store_full = []
         self.my_store = []
-        self.my_unit = {'Модель устройства': self.name, 'Цена за ед': self.price, 'Количество': self.quantity}
+        self.my_unit = {'Device model': self.name, 'price per one': self.price, 'Quantity': self.quantity}
 
     def __str__(self):
-        return f'{self.name} цена {self.price} количество {self.quantity}'
+        return f'{self.name} price {self.price} quantity {self.quantity}'
 
 
     def reception(self):
         try:
-            unit = input(f'Введите наименование ')
-            unit_p = int(input(f'Введите цену за ед '))
-            unit_q = int(input(f'Введите количество '))
-            unique = {'Модель устройства': unit, 'Цена за ед': unit_p, 'Количество': unit_q}
+            unit = input(f'Enter a name ')
+            unit_p = int(input(f'Enter price per unit '))
+            unit_q = int(input(f'Enter quantity '))
+            unique = {'Device model': unit, 'price per one': unit_p, 'Quantity': unit_q}
             self.my_unit.update(unique)
             self.my_store.append(self.my_unit)
-            print(f'Текущий список -\n {self.my_store}')
+            print(f'Current list -\n {self.my_store}')
         except:
-            return f'Ошибка ввода данных'
+            return f'Data entry error'
 
-        print(f'Для выхода - Q, продолжение - Enter')
+        print(f'To exit - Q, continuation - Enter')
         q = input(f'---> ')
         if q == 'Q' or q == 'q':
             self.my_store_full.append(self.my_store)
