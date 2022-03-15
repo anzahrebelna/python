@@ -13,16 +13,16 @@ with open('file_7.txt', 'r') as file:
             i += 1
     if i != 0:
         prof_aver = prof / i
-        print(f'Прибыль средняя - {prof_aver:.2f}')
+        print(f'Profit average - {prof_aver:.2f}')
     else:
-        print(f'Прибыль средняя - отсутсвует. Все работают в убыток')
-    pr = {'средняя прибыль': round(prof_aver)}
+        print(f'Profit average - absent. Everyone works at a loss')
+    pr = {'Profit average': round(prof_aver)}
     profit.update(pr)
-    print(f'Прибыль каждой компании - {profit}')
+    print(f'Profit per company - {profit}')
 
 with open('file_7.json', 'w') as write_js:
     json.dump(profit, write_js)
 
     js_str = json.dumps(profit)
-    print(f'Создан файл с расширением json со следующим содержимым: \n '
+    print(f'Created a json file with the following content: \n '
           f' {js_str}')
