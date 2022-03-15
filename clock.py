@@ -1,4 +1,4 @@
-all_seconds = int(input('Введите количество секунд:'))
+all_seconds = int(input('Enter number of seconds:'))
 hours = all_seconds // 3600
 minutes = (all_seconds % 3600) // 60
 seconds = ((all_seconds % 3600) % 60)
